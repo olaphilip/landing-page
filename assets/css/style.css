@@ -10,7 +10,7 @@
 	box-sizing: border-box;
 }
 
-body {
+.wrapper{
    display: grid;
    min-height: 100vh;
    place-items: center;
@@ -20,6 +20,15 @@ body {
    padding-right: 15em;
 }
 
+.wrapper-alt {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: var(--clr-neutral-400);
+   color: white;
+   text-align: center;
+ }
+
 .card {
    color: var(--clr-neutral-100);
    background-image: url(images/intro.svg);
@@ -28,6 +37,7 @@ body {
    max-width: 35ch;
    border-radius: 0.5rem;
    overflow: hidden;
+   float: left;
 
    transition: transform 500ms ease;
 }
